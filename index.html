@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- custom compiled scss -->
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="p-lr">
+      <nav class="nav">
+        <a class="nav__logo" href="/">Portfolio</a>
+
+        <ul class="nav__links hide-tablet">
+          <a class="nav__links__items" href="/projects.html">Projects</a>
+          <a class="nav__links__items" href="/workflow.html">Workflow</a>
+          <a class="nav__links__items" href="#">Over mij</a>
+        </ul>
+        <a class="btn--unfilled hide-tablet" href="#">Contact</a>
+
+        <!-- hamburgermenu -->
+        <div class="hamburger">
+          <div class="hamburger__lines"></div>
+        </div>
+      </nav>
+
+      <div class="slidemenu">
+        <a class="slidemenu__a" href="/projects.html">Projects</a>
+        <a class="slidemenu__a" href="/workflow.html">Workflow</a>
+        <a class="slidemenu__a" href="#">Over mij</a>
+        <a class="slidemenu__a accent" href="#">Contact</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <!-- image -->
+      <div class="hero__3d">
+        <div class="hero__image">
+          <img
+            class="hero__image__container"
+            src="/images/index-bg.png"
+            alt="hero-bg"
+          />
+        </div>
+      </div>
+
+      <!-- text -->
+      <div class="hero__text p-l">
+        <div class="hero__greeting">
+          <h3 class="hero__greeting__h3">Hallo ik ben</h3>
+        </div>
+
+        <div class="hero__title">
+          <h1 class="hero__title__h1">YURI</h1>
+        </div>
+
+        <div class="hero__description">
+          <h2 class="hero__description__h2">
+            een <span class="accent">web developer</span> met creativiteit
+          </h2>
+        </div>
+
+        <div class="hero__button">
+          <a class="btn--filled" href="#"
+            >Lees meer <i class="fas fa-angle-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <script src="/app/js/main.js"></script>
+  </body>
+</html>

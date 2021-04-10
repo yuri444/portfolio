@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 8, 33, 1) 0%,
+    rgba(139, 116, 189, 1) 100%
+  );
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 62.5%; //  16px becomes 1.6em
+  color: white;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 13.2em;
+  font-weight: 500;
+
+  @include tablet {
+    font-size: 11.2em;
+  }
+  @include mobile {
+    font-size: 8.2em;
+  }
+}
+
+h2 {
+  font-size:  3.2em;
+  font-weight: 400;
+
+  // @include tablet {
+  //   font-size: 2.7em;
+  // }
+
+  // @include mobile {
+  //   font-size: 1.8em;
+  // }
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+
+  // @include tablet {
+  //   font-size: 1.8em;
+  // }
+
+  // @include mobile {
+  //   font-size: 1.6em;
+  // }
+}
+
+p {
+  font-size: 1.6em;
+}
+
+// buttons
+.btn--unfilled {
+  color: white;
+  font-size: $font-med;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    color: $purple;
+    font-size: $font-med;
+    text-decoration: none;
+    background: white;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+  transition: 300ms ease-in-out;
+  }
+}
+
+.btn--filled {
+  color: $purple;
+  font-size: $font-med;
+  text-decoration: none;
+  background: white;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    color: white;
+    font-size: $font-med;
+    text-decoration: none;
+    background: none;
+    border: 2px solid white;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+  transition: 300ms ease-in-out;
+
+  }
+}
+
+.accent {
+  color: $yellow;
+}
+
+.p-lr {
+  padding: 0 18.2em;
+
+  @include tablet {
+    padding: 0 10.2em;
+  }
+  @include mobile {
+    padding: 0 4em;
+  }
+}
+
+.p-l {
+  padding-left: 18.2em;
+
+  @include tablet {
+    padding-left: 10.2em;
+  }
+  @include mobile {
+    padding-left: 4em;
+  }
+}
+
+.hide-mobile {
+  @include mobile {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @include tablet {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @include desktop {
+    display: none;
+  }
+}
+
+.show-mobile {
+  @include mobile-up {
+    display: none;
+  }
+}
+
+.show-tablet {
+  @include tablet-up {
+    display: none;
+  }
+}
+
+.show-desktop {
+  @include desktop-up {
+    display: none;
+  }
+}

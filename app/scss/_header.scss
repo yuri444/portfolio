@@ -1,0 +1,136 @@
+.nav {
+  padding: 4em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    z-index: 3;
+    color: white;
+    font-size: 4em;
+    text-decoration: none;
+  }
+
+  &__links {
+    font-size: $font-med;
+
+    &__items {
+      position: relative;
+      color: white;
+      text-decoration: none;
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 3.6em;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        right: 0;
+        left: 0;
+        bottom: -0.7em;
+        background: white;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.hamburger {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+
+  &__lines {
+    width: 45px;
+    height: 3px;
+    border-radius: 1em;
+    transition: 300ms ease-in-out;
+    background: white;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 45px;
+      height: 3px;
+      border-radius: 1em;
+      transition: 300ms ease-in-out;
+      background: white;
+    }
+
+    &::before {
+      transform: translateY(1.3em);
+    }
+
+    &::after {
+      transform: translateY(-1.3em);
+    }
+  }
+
+  &--open &__lines {
+    transform: translateX(-50px);
+    background: transparent;
+
+    &::before {
+      transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    &::after {
+      transform: rotate(-45deg) translate(35px, 35px);
+    }
+  }
+
+  @include tablet-up {
+    display: none;
+  }
+}
+
+.slidemenu {
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  transition: 300ms ease;
+  background: 
+    rgba(15, 8, 33, 1) 100%;
+
+  &--open {
+    bottom: 0;
+  }
+
+  &__a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    align-items: center;
+    margin: 3em auto 0;
+    padding: 1.5em;
+    text-decoration: none;
+    &:last-child{
+      color: $yellow;
+      border: 3px solid;
+      border-radius: 5em;
+
+    }
+  }
+}

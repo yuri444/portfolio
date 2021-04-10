@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- custom compiled scss -->
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header class="p-lr">
+      <nav class="nav">
+        <a class="nav__logo" href="/">Portfolio</a>
+
+        <ul class="nav__links hide-tablet">
+          <a class="nav__links__items" href="/projects.html">Projects</a>
+          <a class="nav__links__items" href="/workflow.html">Workflow</a>
+          <a class="nav__links__items" href="#">Over mij</a>
+        </ul>
+
+        <a class="btn--unfilled hide-tablet" href="#">Contact</a>
+        <div class="hamburger">
+          <div class="hamburger__lines"></div>
+        </div>
+      </nav>
+
+      <div class="slidemenu">
+        <a class="slidemenu__a" href="/projects.html">Projects</a>
+        <a class="slidemenu__a" href="/workflow.html">Workflow</a>
+        <a class="slidemenu__a" href="#">Over mij</a>
+        <a class="slidemenu__a accent" href="#">Contact</a>
+      </div>
+    </header>
+
+    <section class="workflow">
+      <div class="workflow__heading">
+        <h1>Workflow <i class="fas fa-stream fa-xs"></i></h1>
+        <h3>
+          Hier laat ik zien hoe ik te werk ben gegaan met het maken van deze
+          website
+        </h3>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__line"></div>
+        <!-- ========== 1 ========== -->
+        <div class="timeline__section">
+          <div class="timeline__section__ball"></div>
+          <div class="timeline__section__content">
+            <img src="/images/workflow-1.jpg" alt="wireframe-image" />
+            <h2>WireFrame</h2>
+            <p>
+              Eerst bedenk ik hoe ik mijn website eruit wilt laten zien en vanaf
+              daaruit maak ik een wireframe.
+            </p>
+          </div>
+        </div>
+
+        <!-- ========== 2 ========== -->
+        <div class="timeline__section">
+          <div class="timeline__section__ball"></div>
+          <div class="timeline__section__content">
+            <img src="/images/workflow-2.jpg" alt="wireframe-image" />
+            <h2>Adobe Dimension</h2>
+            <p>
+              Omdat je alleen 7 seconden hebt om een eerste goede impressie te
+              maken, koos ik ervoor om een 3d afbeelding te maken voor de
+              homepagina in adobe dimension.
+            </p>
+          </div>
+        </div>
+
+        <!-- ========== 3 ========== -->
+        <div class="timeline__section">
+          <div class="timeline__section__ball"></div>
+          <div class="timeline__section__content">
+            <img src="/images/workflow-3.jpg" alt="wireframe-image" />
+            <h2>Mockup - Adobe XD</h2>
+            <p>
+              Hierna begin ik met het maken van een mockup in adobe xd. Hierin
+              maak ik het design voor mijn website zodat ik het later kan
+              nabouwen met code.
+            </p>
+          </div>
+        </div>
+
+        <!-- ========== 4 ========== -->
+        <div class="timeline__section">
+          <div class="timeline__section__ball"></div>
+          <div class="timeline__section__content">
+            <img src="/images/workflow-4.jpg" alt="wireframe-image" />
+            <h2>Code</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quae numquam porro optio totam laborum aut nostrum
+              quibusdam omnis ut?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/app/js/main.js"></script>
+  </body>
+</html>

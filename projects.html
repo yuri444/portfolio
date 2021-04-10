@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- custom compiled scss -->
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="p-lr">
+      <nav class="nav">
+        <a class="nav__logo" href="/">Portfolio</a>
+
+        <ul class="nav__links hide-tablet">
+          <a class="nav__links__items" href="/projects.html">Projects</a>
+          <a class="nav__links__items" href="/workflow.html">Workflow</a>
+          <a class="nav__links__items" href="#">Over mij</a>
+        </ul>
+
+        <a class="btn--unfilled hide-tablet" href="#">Contact</a>
+        <div class="hamburger">
+          <div class="hamburger__lines"></div>
+        </div>
+      </nav>
+
+      <div class="slidemenu">
+        <a class="slidemenu__a" href="/projects.html">Projects</a>
+        <a class="slidemenu__a" href="/workflow.html">Workflow</a>
+        <a class="slidemenu__a" href="#">Over mij</a>
+        <a class="slidemenu__a accent" href="#">Contact</a>
+      </div>
+    </header>
+
+    <section class="projects p-lr">
+      <div class="projects__text">
+        <h1>Projects <i class="fas fa-folder-open fa-xs"></i></h1>
+        <div class="projects__text__description">
+          <h3>Dit zijn projecten die ik zelf heb gemaakt.</h3>
+        </div>
+      </div>
+
+      <div class="projects__wrapper">
+        <!-- ================================ 1 ================================ -->
+        <div class="projects__card">
+          <figure class="figure projects__card--front">
+            <img src="/images/projects-1.jpg" alt="project-1" />
+            <div class="projects__card__content">
+              <h3>
+                <span class="html">html</span>
+                <span class="scss">scss</span>
+                <span class="js">js</span>
+              </h3>
+              <h2>easy bank</h2>
+              <p>
+                Je moet de website zo goed mogelijk namaken. Je krijgt alleen de
+                afbeeldingen voor het design. deze challenge staat op
+                <a
+                  href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"
+                  >frontendmentor.io</a
+                >
+              </p>
+            </div>
+          </figure>
+          <figure class="figure projects__card--back">
+            <h2>Bekijk het project op mijn github</h2>
+            <a class="btn--filled" href="#">Bekijk</a>
+          </figure>
+        </div>
+
+        <!-- ================================ 2 ================================ -->
+        <div class="projects__card">
+          <figure class="projects__card--front">
+            <img src="/images/projects-2.jpg" alt="project-1" />
+            <div class="projects__card__content red">
+              <h3>
+                <span class="html">html</span>
+                <span class="scss">scss</span>
+                <span class="react">react</span>
+              </h3>
+              <h2>netflix clone</h2>
+              <p>
+                Dit was een project voor school in dit project moest je netflix
+                clone maken met scss en react in groepjes van 2
+              </p>
+            </div>
+          </figure>
+          <figure class="projects__card--back">
+            <h2>Bekijk het project op mijn github</h2>
+            <a class="btn--filled" href="#">Bekijk</a>
+          </figure>
+        </div>
+
+        <!-- ================================ 3 ================================ -->
+        <div class="projects__card">
+          <figure class="projects__card--front">
+            <img src="/images/projects-3.jpg" alt="project-1" />
+            <div class="projects__card__content red">
+              <h3>
+                <span class="html">html</span>
+                <span class="css">css</span>
+                <span class="bootstrap">bootstrap</span>
+              </h3>
+              <h2>tindog</h2>
+              <p>
+                Deze website is voornamelijk gebouwd met bootstrap, dit was een
+                project van een udemy curses die ik aan het volgen ben
+              </p>
+            </div>
+          </figure>
+          <figure class="projects__card--back">
+            <h2>Bekijk het project op mijn github</h2>
+            <a class="btn--filled" href="#">Bekijk</a>
+          </figure>
+        </div>
+
+        <!-- ================================ 4 ================================ -->
+        <div class="projects__card">
+          <figure class="projects__card--front">
+            <img src="/images/projects-2.jpg" alt="project-1" />
+            <div class="projects__card__content red">
+              <h3>
+                <span class="html">html</span>
+                <span class="css">scss</span>
+                <span class="react">react</span>
+              </h3>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                eaque necessitatibus laudantium?
+              </p>
+            </div>
+          </figure>
+          <figure class="projects__card--back">
+            <h2>Bekijk het project op mijn github</h2>
+            <a class="btn--filled" href="#">Bekijk</a>
+          </figure>
+        </div>
+        <!-- ================================ 5 ================================ -->
+      </div>
+    </section>
+    <script src="/app/js/main.js"></script>
+  </body>
+</html>

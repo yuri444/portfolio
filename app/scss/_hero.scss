@@ -1,0 +1,64 @@
+.hero {
+  display: flex;
+  @include tablet {
+    display: block;
+    text-align: center;
+  }
+  
+  &__text {
+    order: 1;
+    z-index: 3;
+    flex: 1;
+    margin-top: 8%;
+
+    @include tablet {
+      padding-right: 30%;
+      margin-top: 0;
+    }
+
+    @include mobile {
+      padding: 0;
+      margin: 1em 0;
+    }
+  }
+  
+  &__3d {
+    order: 2;
+    z-index: 2;
+    flex: 1;
+    margin-top: 6%;
+    margin-right: 10%;
+    // position: relative;
+    // top: 5em;
+    // right: 13em;
+
+    @include tablet {
+      padding-left: 30%;
+    }
+
+    @include mobile {
+      padding: 0;
+      margin: 2em 0;
+      text-align: center;
+    }
+
+  }
+
+  &__description {
+    &__h2 {
+      margin-bottom: 1.2em;
+    }
+  }
+
+
+  &__image__container {
+    @include tablet {
+      width: 50em;
+    } 
+    @include mobile {
+      width: 30em;
+    }
+  }
+
+  
+}
