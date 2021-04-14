@@ -60,6 +60,13 @@ p {
   font-size: 1.6em;
 }
 
+hr {
+  border: 1.3em dotted #221c31;
+  border-bottom: none;
+  width: 9em;
+  margin: 0 auto 1.3em;
+}
+
 // buttons
 .btn--unfilled {
   color: white;

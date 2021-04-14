@@ -12,12 +12,12 @@
     margin-top: 8%;
 
     @include tablet {
-      padding-right: 30%;
-      margin-top: 0;
+      padding: 0 10em;
+      margin: 2em 0;
     }
 
     @include mobile {
-      padding: 0;
+      padding: 0 2em;
       margin: 1em 0;
     }
   }
@@ -33,7 +33,8 @@
     // right: 13em;
 
     @include tablet {
-      padding-left: 30%;
+      padding: 0;
+      margin: 2em 0;
     }
 
     @include mobile {

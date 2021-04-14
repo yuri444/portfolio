@@ -47,6 +47,13 @@ p {
   font-size: 1.6em;
 }
 
+hr {
+  border: 1.3em dotted #221c31;
+  border-bottom: none;
+  width: 9em;
+  margin: 0 auto 1.3em;
+}
+
 .btn--unfilled {
   color: white;
   font-size: 1.8em;
@@ -353,14 +360,14 @@ p {
 
 @media (max-width: 1092px) {
   .hero__text {
-    padding-right: 30%;
-    margin-top: 0;
+    padding: 0 10em;
+    margin: 2em 0;
   }
 }
 
 @media (max-width: 576px) {
   .hero__text {
-    padding: 0;
+    padding: 0 2em;
     margin: 1em 0;
   }
 }
@@ -379,7 +386,8 @@ p {
 
 @media (max-width: 1092px) {
   .hero__3d {
-    padding-left: 30%;
+    padding: 0;
+    margin: 2em 0;
   }
 }
 
