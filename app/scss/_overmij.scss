@@ -1,0 +1,186 @@
+.overmij {
+  &__text {
+    padding-top: 3em;
+    text-align: center;
+
+    h1 {
+      font-size: 6.5em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 2em;
+      margin: 0 auto 2em;
+      width: 45ch;
+
+      @include tablet {
+        width: auto;
+      }
+    }
+  }
+
+  &__title {
+    h1 {
+      text-align: center;
+      font-size: 6.5em;
+      margin-bottom: 0.2em;
+    }
+  }
+}
+
+.skills {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em 0;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  i {
+    position: absolute;
+    top: 0;
+    left: 17%;
+    font-size: 6em;
+    @include tablet {
+      position: static;
+      margin-bottom: 0.2em;
+    }
+  }
+
+  &__bar {
+    position: relative;
+    width: 50%;
+    height: 5em;
+    border-radius: 5em;
+    background: #fff;
+    overflow: hidden;
+
+    @include tablet {
+      width: 60%;
+    }
+
+    &__number {
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translateY(-50%);
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    &--html {
+      width: 100%;
+      height: 100%;
+      background: #ff5733;
+      animation: hundred 3s ease-in-out;
+    }
+
+    &--css {
+      width: 100%;
+      height: 100%;
+      background: #264de4;
+      animation: hundred 3s ease-in-out;
+    }
+
+    &--javascript {
+      width: 80%;
+      height: 100%;
+      background: #f0db4f;
+      animation: eighty 3s ease-in-out;
+    }
+
+    &--sass {
+      width: 90%;
+      height: 100%;
+      background: #cc6699;
+      animation: ninety 3s ease-in-out;
+    }
+
+    &--php {
+      width: 53%;
+      height: 100%;
+      background: #8993be;
+      animation: fifty 3s ease-in-out;
+    }
+
+    &--bootstrap {
+      width: 60%;
+      height: 100%;
+      background: #563d7c;
+      animation: sixty 3s ease-in-out;
+    }
+
+    &--react {
+      width: 60%;
+      height: 100%;
+      background: #61dbfb;
+      animation: sixty 3s ease-in-out;
+    }
+
+    &--database {
+      width: 70%;
+      height: 100%;
+      background: #00758f;
+      animation: seventy 3s ease-in-out;
+    }
+  }
+}
+
+@keyframes hundred {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes ninety {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+@keyframes eighty {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+@keyframes seventy {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+@keyframes sixty {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+@keyframes fifty {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 53%;
+  }
+}

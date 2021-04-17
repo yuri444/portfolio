@@ -47,7 +47,12 @@
 
   &__description {
     &__h2 {
+      width: 19ch;
       margin-bottom: 1.2em;
+      
+      @include tablet {
+        width: auto;
+      }
     }
   }
 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- custom compiled scss -->
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="p-lr">
+      <nav class="nav">
+        <a class="nav__logo" href="/">Portfolio</a>
+
+        <ul class="nav__links hide-tablet">
+          <a class="nav__links__items" href="/projects.html">Projects</a>
+          <a class="nav__links__items" href="/workflow.html">Workflow</a>
+          <a class="nav__links__items" href="/overmij.html">Over mij</a>
+        </ul>
+
+        <a class="btn--unfilled hide-tablet" href="#">Contact</a>
+        <div class="hamburger">
+          <div class="hamburger__lines"></div>
+        </div>
+      </nav>
+
+      <div class="slidemenu">
+        <a class="slidemenu__a" href="/projects.html">Projects</a>
+        <a class="slidemenu__a" href="/workflow.html">Workflow</a>
+        <a class="slidemenu__a" href="/overmij.html">Over mij</a>
+        <a class="slidemenu__a accent" href="#">Contact</a>
+      </div>
+    </header>
+
+    <section class="overmij p-lr">
+      <div class="overmij__text">
+        <h1>Over mij</h1>
+        <hr />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga aut
+          ipsa tempore laudantium aliquid accusamus voluptate cum. Quis minima
+          aperiam voluptatibus ullam architecto incidunt accusantium deserunt
+        </p>
+      </div>
+
+      <div class="overmij__title">
+        <h1>Skills</h1>
+        <hr />
+      </div>
+
+      <!-- ========== html ========== -->
+      <div class="skills">
+        <i class="fab fa-html5"></i>
+        <div class="skills__bar">
+          <div class="skills__bar--html"></div>
+          <span class="skills__bar__number">100%</span>
+        </div>
+      </div>
+      <!-- ========== css ========== -->
+      <div class="skills">
+        <i class="fab fa-css3"></i>
+        <div class="skills__bar">
+          <div class="skills__bar--css"></div>
+          <span class="skills__bar__number">100%</span>
+        </div>
+      </div>
+      <!-- ========== javascript ========== -->
+      <div class="skills">
+        <i class="fab fa-js"></i>
+        <div class="skills__bar">
+          <div class="skills__bar--javascript"></div>
+          <span class="skills__bar__number">80%</span>
+        </div>
+      </div>
+      <!-- ========== sass ========== -->
+      <div class="skills">
+        <i class="fab fa-sass"></i>
+        <div class="skills__bar">
+          <div class="skills__bar--sass"></div>
+          <span class="skills__bar__number">90%</span>
+        </div>
+      </div>
+      <!-- ========== php ========== -->
+      <div class="skills">
+        <i class="fab fa-php"></i>
+        <div class="skills__bar">
+          <div class="skills__bar--php"></div>
+          <span class="skills__bar__number">50%</span>
+        </div>
+      </div>
+      <!-- ========== bootstrap ========== -->
+      <div class="skills">
+        <i class="fab fa-bootstrap"></i>
+        <div class="skills__bar">
+          <div class="skills__bar--bootstrap"></div>
+          <span class="skills__bar__number">60%</span>
+        </div>
+      </div>
+      <!-- ========== react ========== -->
+      <div class="skills">
+        <i class="fab fa-react"></i>
+        <div class="skills__bar">
+          <div class="skills__bar--react"></div>
+          <span class="skills__bar__number">50%</span>
+        </div>
+      </div>
+      <!-- ========== react ========== -->
+      <div class="skills">
+        <i class="fas fa-database"></i>
+        <div class="skills__bar">
+          <div class="skills__bar--database"></div>
+          <span class="skills__bar__number">70%</span>
+        </div>
+      </div>
+    </section>
+    <script src="/app/js/main.js"></script>
+  </body>
+</html>

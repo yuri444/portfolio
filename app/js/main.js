@@ -1,3 +1,5 @@
+// ========== hamburger & slidemenu ==========
+
 const hamburger = document.querySelector(".hamburger");
 const silde = document.querySelector(".slidemenu");
 
@@ -6,6 +8,7 @@ hamburger.addEventListener("click", function () {
   silde.classList.toggle("slidemenu--open");
 });
 
+// ========== workflow animatie ==========
 function qs(selector, all = false) {
   return all
     ? document.querySelectorAll(selector)
