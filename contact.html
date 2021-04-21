@@ -32,7 +32,7 @@
           <a class="nav__links__items" href="/workflow.html">Workflow</a>
           <a class="nav__links__items" href="/overmij.html">Over mij</a>
         </ul>
-        <a class="btn--unfilled hide-tablet" href="/contact.html">Contact</a>
+        <a class="btn--unfilled hide-tablet" href="#">Contact</a>
 
         <!-- ========== hamburgermenu ========== -->
         <div class="hamburger">
@@ -44,43 +44,22 @@
         <a class="slidemenu__a" href="/projects.html">Projects</a>
         <a class="slidemenu__a" href="/workflow.html">Workflow</a>
         <a class="slidemenu__a" href="/overmij.html">Over mij</a>
-        <a class="slidemenu__a accent" href="/contact.html">Contact</a>
+        <a class="slidemenu__a accent" href="#">Contact</a>
       </div>
     </header>
 
-    <section class="hero">
-      <!-- ========== image ========== -->
-      <div class="hero__3d">
-        <div class="hero__image">
-          <img
-            class="hero__image__container"
-            src="/images/index-bg.png"
-            alt="hero-bg"
-          />
-        </div>
+    <section class="contact p-lr">
+      <div class="contact__text">
+        <h1>Contact mij</h1>
+        <h3>voel je vrij om een bericht te sturen</h3>
       </div>
-
-      <!-- ========== text ========== -->
-      <div class="hero__text p-l">
-        <div class="hero__greeting">
-          <h3 class="hero__greeting__h3">Hallo ik ben</h3>
-        </div>
-
-        <div class="hero__title">
-          <h1 class="hero__title__h1">YURI</h1>
-        </div>
-
-        <div class="hero__description">
-          <h2 class="hero__description__h2">
-            een <span class="accent">web developer</span> met creativiteit
-          </h2>
-        </div>
-
-        <div class="hero__button">
-          <a class="btn--filled" href="/projects.html"
-            >Lees meer <i class="fas fa-angle-right"></i
-          ></a>
-        </div>
+      <div class="contact__form">
+        <form class="contact__form__content" name="contact" method="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="Naam:" />
+          <input type="email" name="name" placeholder="E-mail:" />
+          <textarea name="message" placeholder="Bericht:"></textarea>
+          <button class="btn--filled" type="submit">Versturen</button>
+        </form>
       </div>
     </section>
     <script src="/app/js/main.js"></script>
