@@ -10,7 +10,7 @@ body {
   background: linear-gradient(180deg, #0f0821 0%, #8b74bd 100%);
   background-attachment: fixed;
   height: 100vh;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 62.5%;
   color: white;
   overflow-x: hidden;
@@ -74,6 +74,7 @@ li {
   font-size: 1.8em;
   text-decoration: none;
   background: white;
+  border: 2px solid transparent;
   padding: 0.5em 1.5em;
   border-radius: 50px;
   -webkit-transition: 300ms ease-in-out;
@@ -85,6 +86,7 @@ li {
   font-size: 1.8em;
   text-decoration: none;
   background: white;
+  border: 2px solid transparent;
   padding: 0.5em 1.5em;
   border-radius: 50px;
   -webkit-transition: 300ms ease-in-out;
@@ -212,7 +214,7 @@ li {
 }
 
 .nav__links__items::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 3px;
   right: 0;
@@ -255,7 +257,7 @@ li {
 
 .hamburger__lines::before, .hamburger__lines::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 45px;
   height: 3px;
   border-radius: 1em;
@@ -1118,6 +1120,7 @@ li {
   color: white;
   cursor: pointer;
   font-family: "Montserrat Alternates", sans-serif;
+  border: 3px solid transparent;
   outline: none;
 }
 

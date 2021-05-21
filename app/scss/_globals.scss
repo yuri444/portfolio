@@ -12,7 +12,7 @@ body {
   );
   background-attachment: fixed;
   height: 100vh;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 62.5%; //  16px becomes 1.6em
   color: white;
   overflow-x: hidden;
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-size:  3.2em;
+  font-size: 3.2em;
   font-weight: 400;
 
   // @include tablet {
@@ -86,9 +86,10 @@ li {
     font-size: $font-med;
     text-decoration: none;
     background: white;
+    border: 2px solid transparent;
     padding: 0.5em 1.5em;
     border-radius: 50px;
-  transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
   }
 }
 
@@ -97,6 +98,7 @@ li {
   font-size: $font-med;
   text-decoration: none;
   background: white;
+  border: 2px solid transparent;
   padding: 0.5em 1.5em;
   border-radius: 50px;
   transition: 300ms ease-in-out;
@@ -109,8 +111,7 @@ li {
     border: 2px solid white;
     padding: 0.5em 1.5em;
     border-radius: 50px;
-  transition: 300ms ease-in-out;
-
+    transition: 300ms ease-in-out;
   }
 }
 
